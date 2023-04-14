@@ -160,7 +160,6 @@ import {scrollToAnchor} from "../utils";
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     .typing-style {

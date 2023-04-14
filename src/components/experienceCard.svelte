@@ -17,6 +17,22 @@
                     <h3 class="card__heading">Bjarnechapter ZBC</h3>
                 </div>
             </a>
+
+            <a class="card" href="/boredscraper">
+                <div class="card__background" style="background-image: url(https://s2.qwant.com/thumbr/0x380/e/f/e247e3bc92529faca50cdf673ac5a34b6093ba598d3b35b3c1a3cdcd687333/reddit2-800x450-1.png?u=https%3A%2F%2Fwww.enter.co%2Fwp-content%2Fuploads%2F2021%2F02%2Freddit2-800x450-1.png&q=0&b=1&p=0&a=0)"></div>
+                <div class="card__content">
+                    <p class="card__category">Command Line Tools</p>
+                    <h3 class="card__heading">Bored Scraper</h3>
+                </div>
+            </a>
+
+            <a class="card" href="/passman">
+                <div class="card__background" style="background-image: url(https://media.discordapp.net/attachments/905002334428483674/1044965665288757339/Login.png?width=1909&height=1074)"></div>
+                <div class="card__content">
+                    <p class="card__category">Security</p>
+                    <h3 class="card__heading">Passman</h3>
+                </div>
+            </a>
         </div>
     </section>
 </div>
@@ -27,7 +43,7 @@
         --text-lighter: rgba(255,255,255,0.9);
         --spacing-s: 0.5rem;
         --spacing-m: 1rem;
-        --spacing-l: 1.5rem;
+        --spacing-l: 2rem;
         --spacing-xl: 2rem;
         --spacing-xxl: 4rem;
         --width-container: 75rem;
@@ -119,4 +135,10 @@
         line-height: 1.4;
         word-spacing: 100vw;
     }
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 </style>
