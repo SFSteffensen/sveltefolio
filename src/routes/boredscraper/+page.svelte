@@ -1,32 +1,32 @@
 <title>
-    Bored Scraper
+	Bored Scraper
 </title>
-<div class="pageheight">
-    <div class="center">
-        <h1 class="title typing-style" data-theme={$theme}>
-            Bored Scraper
-        </h1>
-    </div>
-    <img
-            src="https://s2.qwant.com/thumbr/0x380/e/f/e247e3bc92529faca50cdf673ac5a34b6093ba598d3b35b3c1a3cdcd687333/reddit2-800x450-1.png?u=https%3A%2F%2Fwww.enter.co%2Fwp-content%2Fuploads%2F2021%2F02%2Freddit2-800x450-1.png&q=0&b=1&p=0&a=0"
-            alt=""
-            style="width: 20%; margin: 0 auto; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding-bottom: 4rem;"
-    />
-    <p class="carved" data-theme={$theme}>
-        Bored Scraper is a reddit scraper i made in rust from scratch because i was bored!
-        <br/> <br/>
-        The Repository is private because i dont want to get sued by reddit.
-    </p>
+<div class='pageheight'>
+	<div class='center'>
+		<h1 class='title typing-style' data-theme={$theme}>
+			Bored Scraper
+		</h1>
+	</div>
+	<img
+		alt=''
+		src='https://s2.qwant.com/thumbr/0x380/e/f/e247e3bc92529faca50cdf673ac5a34b6093ba598d3b35b3c1a3cdcd687333/reddit2-800x450-1.png?u=https%3A%2F%2Fwww.enter.co%2Fwp-content%2Fuploads%2F2021%2F02%2Freddit2-800x450-1.png&q=0&b=1&p=0&a=0'
+		style='width: 20%; margin: 0 auto; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding-bottom: 4rem;'
+	/>
+	<p class='carved' data-theme={$theme}>
+		Bored Scraper is a reddit scraper i made in rust from scratch because i was bored!
+		<br /> <br />
+		The Repository is private because i dont want to get sued by reddit.
+	</p>
 </div>
-<div style="display: flex;
+<div style='display: flex;
             justify-content: center;
-            align-items: center;">
-    <a
-            href="/../"
-            class="source center"
-            data-theme={$theme}>
-        Take Me Back
-    </a>
+            align-items: center;'>
+	<a
+		class='source center'
+		data-theme={$theme}
+		href='/../'>
+		Take Me Back
+	</a>
 </div>
 
 <style>
@@ -123,7 +123,6 @@
     }
 </style>
 
-<script lang="ts">
-    import {theme} from "../../stores/stores";
-    import {scrollToAnchor} from "../../utils.ts";
+<script lang='ts'>
+    import { theme } from '../../stores/stores';
 </script>

@@ -1,33 +1,33 @@
 <title>
-    Passman
+	Passman
 </title>
-<div class="pageheight">
-    <div class="center">
-        <h1 class="title typing-style" data-theme={$theme}>
-            Passman <br/> A password manager written using Tauri
-        </h1>
-    </div>
-    <img
-            src="https://media.discordapp.net/attachments/905002334428483674/1044965665288757339/Login.png?width=1909&height=1074"
-            alt=""
-            style="width: 20%; margin: 0 auto; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding-bottom: 4rem;"
-    />
-    <p class="carved" data-theme={$theme}>
-        Passman is a password manager written in <span class="rs">Rust</span> & <span class="ts">TypeScript</span> using
-        Tauri. It was made for a programming exam and is not intended to be used in production.
-        As of now it has major security flaws and is just a proof of concept.
-        Due to the above reasons, the repo is private and will not be made public.
-    </p>
+<div class='pageheight'>
+	<div class='center'>
+		<h1 class='title typing-style' data-theme={$theme}>
+			Passman <br /> A password manager written using Tauri
+		</h1>
+	</div>
+	<img
+		alt=''
+		src='https://media.discordapp.net/attachments/905002334428483674/1044965665288757339/Login.png?width=1909&height=1074'
+		style='width: 20%; margin: 0 auto; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding-bottom: 4rem;'
+	/>
+	<p class='carved' data-theme={$theme}>
+		Passman is a password manager written in <span class='rs'>Rust</span> & <span class='ts'>TypeScript</span> using
+		Tauri. It was made for a programming exam and is not intended to be used in production.
+		As of now it has major security flaws and is just a proof of concept.
+		Due to the above reasons, the repo is private and will not be made public.
+	</p>
 </div>
-<div style="display: flex;
+<div style='display: flex;
             justify-content: center;
-            align-items: center;">
-    <a
-            href="/../"
-            class="source center"
-            data-theme={$theme}>
-        Take Me Back
-    </a>
+            align-items: center;'>
+	<a
+		class='source center'
+		data-theme={$theme}
+		href='/../'>
+		Take Me Back
+	</a>
 </div>
 
 <style>
@@ -124,6 +124,6 @@
     }
 </style>
 
-<script lang="ts">
-    import {theme} from "../../stores/stores";
+<script lang='ts'>
+    import { theme } from '../../stores/stores';
 </script>
