@@ -43,7 +43,7 @@
 	</div>
 
 	<div class='pageheight' id='about'>
-		<h1 class='title' data-theme={$theme}>
+		<h1 class='title' data-theme={$theme} style='padding-top: 2rem;'>
 			About me
 		</h1>
 
