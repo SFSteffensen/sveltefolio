@@ -6,17 +6,39 @@
         <button href="#about" class="navbar-link heroButton" data-theme="dark" on:click={scrollToAnchor}>About</button>
     </div>
     <div>
-        <button href="#experience" class="navbar-link heroButton" data-theme="dark" on:click={scrollToAnchor}>Experience</button>
+        <button href="#experience" class="navbar-link heroButton" data-theme="dark" on:click={scrollToAnchor}>
+            Experience
+        </button>
     </div>
     <div>
-        <button href="#contact" class="navbar-link heroButton" data-theme="dark" on:click={scrollToAnchor}>Contact</button>
+        <button href="#contact" class="navbar-link heroButton" data-theme="dark" on:click={scrollToAnchor}>Contact
+        </button>
     </div>
     <div>
         <button class="heroButton" data-theme={$theme} on:click={toggle_theme}>
             {#if $theme === 'dark'}
-                <svg width="24px" height="24px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>sun</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Combined-Shape" fill="#ffffff" transform="translate(21.333333, 21.333333)"> <path d="M256,384 L256,469.333333 L213.333333,469.333333 L213.333333,384 L256,384 Z M355.346224,325.176335 L415.686003,385.516113 L385.516113,415.686003 L325.176335,355.346224 L355.346224,325.176335 Z M113.987109,325.176335 L144.156999,355.346224 L83.81722,415.686003 L53.6473307,385.516113 L113.987109,325.176335 Z M234.666667,118.01971 C299.089002,118.01971 351.313623,170.244331 351.313623,234.666667 C351.313623,299.089002 299.089002,351.314049 234.666667,351.314049 C203.711846,351.372867 174.007802,339.102338 152.119399,317.213934 C130.230995,295.325531 117.960466,265.621487 118.019285,234.666667 C118.019285,170.244331 170.244331,118.01971 234.666667,118.01971 Z M234.666667,160.686377 C193.808416,160.686377 160.685951,193.808546 160.685951,234.748031 C160.648688,254.358867 168.422443,273.1772 182.289288,287.044045 C196.156133,300.91089 214.974466,308.684645 234.666667,308.647305 C275.524788,308.647305 308.646957,275.524917 308.646957,234.666667 C308.646957,193.808481 275.524853,160.686377 234.666667,160.686377 Z M469.333333,213.333333 L469.333333,256 L384,256 L384,213.333333 L469.333333,213.333333 Z M85.3333333,213.333333 L85.3333333,256 L3.55271368e-15,256 L3.55271368e-15,213.333333 L85.3333333,213.333333 Z M83.81722,53.6473307 L144.156999,113.987109 L113.987109,144.156999 L53.6473307,83.81722 L83.81722,53.6473307 Z M385.516113,53.6473307 L415.686003,83.81722 L355.346224,144.156999 L325.176335,113.987109 L385.516113,53.6473307 Z M256,9.68506364e-12 L256,85.3333333 L213.333333,85.3333333 L213.333333,9.6772259e-12 L256,9.68506364e-12 Z"> </path> </g> </g> </g></svg>
+                <svg width="24px" height="24px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier"><title>sun</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Combined-Shape" fill="#ffffff" transform="translate(21.333333, 21.333333)">
+                                <path d="M256,384 L256,469.333333 L213.333333,469.333333 L213.333333,384 L256,384 Z M355.346224,325.176335 L415.686003,385.516113 L385.516113,415.686003 L325.176335,355.346224 L355.346224,325.176335 Z M113.987109,325.176335 L144.156999,355.346224 L83.81722,415.686003 L53.6473307,385.516113 L113.987109,325.176335 Z M234.666667,118.01971 C299.089002,118.01971 351.313623,170.244331 351.313623,234.666667 C351.313623,299.089002 299.089002,351.314049 234.666667,351.314049 C203.711846,351.372867 174.007802,339.102338 152.119399,317.213934 C130.230995,295.325531 117.960466,265.621487 118.019285,234.666667 C118.019285,170.244331 170.244331,118.01971 234.666667,118.01971 Z M234.666667,160.686377 C193.808416,160.686377 160.685951,193.808546 160.685951,234.748031 C160.648688,254.358867 168.422443,273.1772 182.289288,287.044045 C196.156133,300.91089 214.974466,308.684645 234.666667,308.647305 C275.524788,308.647305 308.646957,275.524917 308.646957,234.666667 C308.646957,193.808481 275.524853,160.686377 234.666667,160.686377 Z M469.333333,213.333333 L469.333333,256 L384,256 L384,213.333333 L469.333333,213.333333 Z M85.3333333,213.333333 L85.3333333,256 L3.55271368e-15,256 L3.55271368e-15,213.333333 L85.3333333,213.333333 Z M83.81722,53.6473307 L144.156999,113.987109 L113.987109,144.156999 L53.6473307,83.81722 L83.81722,53.6473307 Z M385.516113,53.6473307 L415.686003,83.81722 L355.346224,144.156999 L325.176335,113.987109 L385.516113,53.6473307 Z M256,9.68506364e-12 L256,85.3333333 L213.333333,85.3333333 L213.333333,9.6772259e-12 L256,9.68506364e-12 Z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
             {:else}
-                <svg width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#ffffff" d="M240.448 240.448a384 384 0 1 0 559.424 525.696 448 448 0 0 1-542.016-542.08 390.592 390.592 0 0 0-17.408 16.384zm181.056 362.048a384 384 0 0 0 525.632 16.384A448 448 0 1 1 405.056 76.8a384 384 0 0 0 16.448 525.696z"></path></g></svg>
+                <svg width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
+                     fill="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill="#ffffff"
+                              d="M240.448 240.448a384 384 0 1 0 559.424 525.696 448 448 0 0 1-542.016-542.08 390.592 390.592 0 0 0-17.408 16.384zm181.056 362.048a384 384 0 0 0 525.632 16.384A448 448 0 1 1 405.056 76.8a384 384 0 0 0 16.448 525.696z"></path>
+                    </g>
+                </svg>
             {/if}
         </button>
     </div>
@@ -57,6 +79,7 @@
         margin: 0;
         padding-top: 2.5rem;
     }
+
     :global(body.light) {
         background: var(--backround-colour-light-primary);
         background-size: 350% 350%;
@@ -70,6 +93,7 @@
         margin: 0;
         padding-top: 2.5rem;
     }
+
     button {
         background: none;
         border: none;
@@ -93,24 +117,37 @@
         height: 3.5rem;
         gap: 3rem;
     }
+
+    @media (max-width: 768px) {
+        .navbar {
+            overflow-x: auto;
+            justify-content: flex-start;
+        }
+    }
+
     .navbar > div {
         opacity: 0;
         transform: translateY(-150%);
         animation: slide-in 1s forwards;
         animation-delay: calc(0.2s * var(--i));
     }
+
     .navbar > div:nth-child(1) {
         --i: 1;
     }
+
     .navbar > div:nth-child(2) {
         --i: 2;
     }
+
     .navbar > div:nth-child(3) {
         --i: 3;
     }
+
     .navbar > div:nth-child(4) {
         --i: 4;
     }
+
     .navbar > div:nth-child(5) {
         --i: 5;
     }
@@ -159,8 +196,8 @@
 </style>
 
 <script>
-    import { writable } from "svelte/store";
-    import { onMount, onDestroy } from "svelte";
+    import {writable} from "svelte/store";
+    import {onMount, onDestroy} from "svelte";
     import {theme} from "../stores/stores.ts";
 
     let darkMode = false;
@@ -173,6 +210,7 @@
             element.dataset.theme = darkMode ? 'dark' : 'light';
         });
     });
+
     function scrollToAnchor(event) {
         event.preventDefault();
         const href = event.target.getAttribute("href");

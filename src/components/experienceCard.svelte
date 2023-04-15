@@ -1,9 +1,10 @@
 <div class="experienceCard">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
     <section class="hero-section">
         <div class="card-grid">
             <a class="card" href="/passman">
-                <div class="card__background" style="background-image: url(https://media.discordapp.net/attachments/905002334428483674/1044965665288757339/Login.png?width=1909&height=1074)"></div>
+                <div class="card__background"
+                     style="background-image: url(https://media.discordapp.net/attachments/905002334428483674/1044965665288757339/Login.png?width=1909&height=1074)"></div>
                 <div class="card__content">
                     <p class="card__category">Security</p>
                     <h3 class="card__heading">Passman</h3>
@@ -11,7 +12,8 @@
             </a>
 
             <a class="card" href="/zbcTemplate">
-                <div class="card__background" style="background-image: url(https://cdn.discordapp.com/attachments/905002334428483674/1095993490602725396/zbcCard.png)"></div>
+                <div class="card__background"
+                     style="background-image: url(https://cdn.discordapp.com/attachments/905002334428483674/1095993490602725396/zbcCard.png)"></div>
                 <div class="card__content">
                     <p class="card__category">Work templates</p>
                     <h3 class="card__heading">Bjarnechapter ZBC</h3>
@@ -19,7 +21,8 @@
             </a>
 
             <a class="card" href="/boredscraper">
-                <div class="card__background" style="background-image: url(https://s2.qwant.com/thumbr/0x380/e/f/e247e3bc92529faca50cdf673ac5a34b6093ba598d3b35b3c1a3cdcd687333/reddit2-800x450-1.png?u=https%3A%2F%2Fwww.enter.co%2Fwp-content%2Fuploads%2F2021%2F02%2Freddit2-800x450-1.png&q=0&b=1&p=0&a=0)"></div>
+                <div class="card__background"
+                     style="background-image: url(https://s2.qwant.com/thumbr/0x380/e/f/e247e3bc92529faca50cdf673ac5a34b6093ba598d3b35b3c1a3cdcd687333/reddit2-800x450-1.png?u=https%3A%2F%2Fwww.enter.co%2Fwp-content%2Fuploads%2F2021%2F02%2Freddit2-800x450-1.png&q=0&b=1&p=0&a=0)"></div>
                 <div class="card__content">
                     <p class="card__category">Command Line Tools</p>
                     <h3 class="card__heading">Bored Scraper</h3>
@@ -27,7 +30,8 @@
             </a>
 
             <a class="card" href="/passman">
-                <div class="card__background" style="background-image: url(https://media.discordapp.net/attachments/905002334428483674/1044965665288757339/Login.png?width=1909&height=1074)"></div>
+                <div class="card__background"
+                     style="background-image: url(https://media.discordapp.net/attachments/905002334428483674/1044965665288757339/Login.png?width=1909&height=1074)"></div>
                 <div class="card__content">
                     <p class="card__category">Security</p>
                     <h3 class="card__heading">Passman</h3>
@@ -38,9 +42,9 @@
 </div>
 
 <style>
-    :root{
-        --text-light: rgba(255,255,255,0.6);
-        --text-lighter: rgba(255,255,255,0.9);
+    :root {
+        --text-light: rgba(255, 255, 255, 0.6);
+        --text-lighter: rgba(255, 255, 255, 0.9);
         --spacing-s: 0.5rem;
         --spacing-m: 1rem;
         --spacing-l: 2rem;
@@ -48,7 +52,8 @@
         --spacing-xxl: 4rem;
         --width-container: 75rem;
     }
-    .hero-section{
+
+    .hero-section {
         align-items: flex-start;
         display: flex;
         min-height: 100%;
@@ -56,40 +61,41 @@
         padding: var(--spacing-xxl) var(--spacing-l);
     }
 
-    .card-grid{
+    .card-grid {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-column-gap: var(--spacing-l);
         grid-row-gap: var(--spacing-l);
         max-width: var(--width-container);
         width: 100%;
     }
 
-    @media(min-width: 540px){
-        .card-grid{
+    @media (min-width: 540px) {
+        .card-grid {
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
-    @media(min-width: 960px){
-        .card-grid{
+    @media (min-width: 960px) {
+        .card-grid {
             grid-template-columns: repeat(4, 1fr);
         }
     }
 
-    .card{
+
+    .card {
         list-style: none;
         position: relative;
     }
 
-    .card:before{
+    .card:before {
         content: '';
         display: block;
         padding-bottom: 150%;
         width: 100%;
     }
 
-    .card__background{
+    .card__background {
         background-size: cover;
         background-position: center;
         border-radius: var(--spacing-l);
@@ -101,44 +107,38 @@
         top: 0;
         transform-origin: center;
         transform: scale(1) translateZ(0);
-        transition:
-                filter 200ms linear,
-                transform 200ms linear;
+        transition: filter 200ms linear,
+        transform 200ms linear;
     }
 
-    .card:hover .card__background{
+    .card:hover .card__background {
         transform: scale(1.05) translateZ(0);
     }
 
-    .card-grid:hover > .card:not(:hover) .card__background{
+    .card-grid:hover > .card:not(:hover) .card__background {
         filter: brightness(0.7) saturate(0.3) contrast(1.1) blur(20px);
     }
 
-    .card__content{
+    .card__content {
         left: 0;
         padding: var(--spacing-l);
         position: absolute;
         top: 0;
     }
 
-    .card__category{
+    .card__category {
         color: var(--text-light);
         font-size: 0.9rem;
         margin-bottom: var(--spacing-s);
         text-transform: uppercase;
     }
 
-    .card__heading{
+    .card__heading {
         color: var(--text-lighter);
         font-size: 1.9rem;
-        text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+        text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
         line-height: 1.4;
         word-spacing: 100vw;
-    }
-    .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
 </style>
