@@ -29,12 +29,12 @@
 				</div>
 			</a>
 
-			<a class='card' href='/passman'>
+			<a class='card' href='/sveltefolio'>
 				<div class='card__background'
-						 style='background-image: url(https://media.discordapp.net/attachments/905002334428483674/1044965665288757339/Login.png?width=1909&height=1074)'></div>
+						 style='background-image: url(/public/images/Sveltelight.png)'></div>
 				<div class='card__content'>
-					<p class='card__category'>Security</p>
-					<h3 class='card__heading'>Passman</h3>
+					<p class='card__category'>Website</p>
+					<h3 class='card__heading'>SveltFolio</h3>
 				</div>
 			</a>
 		</div>
