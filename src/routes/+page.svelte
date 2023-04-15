@@ -198,10 +198,12 @@
         .title {
             font-size: 1.5rem;
         }
+
         .profileimage {
             width: 10rem;
             height: 10rem;
         }
+
         .typing-style {
             width: 18ch;
         }

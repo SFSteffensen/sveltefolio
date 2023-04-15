@@ -13,8 +13,8 @@
             style="width: 20%; margin: 0 auto; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding-bottom: 4rem;"
     />
     <p class="carved" data-theme={$theme}>
-       Bored Scraper is a reddit scraper i made in rust from scratch because i was bored!
-        <br /> <br />
+        Bored Scraper is a reddit scraper i made in rust from scratch because i was bored!
+        <br/> <br/>
         The Repository is private because i dont want to get sued by reddit.
     </p>
 </div>
@@ -37,12 +37,15 @@
         text-align: center;
         text-transform: uppercase;
     }
+
     .title[data-theme="dark"] {
         color: var(--text-colour-dark-primary);
     }
+
     .title[data-theme="light"] {
         color: var(--text-colour-light-primary);
     }
+
     .center {
         display: flex;
         justify-content: center;
@@ -56,6 +59,7 @@
         width: 80%;
         margin: 0 auto;
     }
+
     .carved[data-theme="dark"] {
         background: #232634;
     }
@@ -82,6 +86,7 @@
         background: #232634;
         color: var(--text-colour-dark-primary);
     }
+
     .source[data-theme="light"] {
         background: #dce0e8;
         color: var(--text-colour-light-primary);
@@ -102,6 +107,7 @@
             width: 0
         }
     }
+
     @keyframes blink {
         50% {
             border-color: transparent
@@ -111,6 +117,7 @@
     .rs {
         color: #e69f67;
     }
+
     .ts {
         color: #3178c6;
     }

@@ -4,7 +4,7 @@
 <div class="pageheight">
     <div class="center">
         <h1 class="title typing-style" data-theme={$theme}>
-            Passman <br /> A password manager written using Tauri
+            Passman <br/> A password manager written using Tauri
         </h1>
     </div>
     <img
@@ -13,7 +13,8 @@
             style="width: 20%; margin: 0 auto; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding-bottom: 4rem;"
     />
     <p class="carved" data-theme={$theme}>
-        Passman is a password manager written in <span class="rs">Rust</span> & <span class="ts">TypeScript</span> using Tauri. It was made for a programming exam and is not intended to be used in production.
+        Passman is a password manager written in <span class="rs">Rust</span> & <span class="ts">TypeScript</span> using
+        Tauri. It was made for a programming exam and is not intended to be used in production.
         As of now it has major security flaws and is just a proof of concept.
         Due to the above reasons, the repo is private and will not be made public.
     </p>
@@ -37,12 +38,15 @@
         text-align: center;
         text-transform: uppercase;
     }
+
     .title[data-theme="dark"] {
         color: var(--text-colour-dark-primary);
     }
+
     .title[data-theme="light"] {
         color: var(--text-colour-light-primary);
     }
+
     .center {
         display: flex;
         justify-content: center;
@@ -56,6 +60,7 @@
         width: 80%;
         margin: 0 auto;
     }
+
     .carved[data-theme="dark"] {
         background: #232634;
     }
@@ -82,6 +87,7 @@
         background: #232634;
         color: var(--text-colour-dark-primary);
     }
+
     .source[data-theme="light"] {
         background: #dce0e8;
         color: var(--text-colour-light-primary);
@@ -102,6 +108,7 @@
             width: 0
         }
     }
+
     @keyframes blink {
         50% {
             border-color: transparent
@@ -111,6 +118,7 @@
     .rs {
         color: #e69f67;
     }
+
     .ts {
         color: #3178c6;
     }
