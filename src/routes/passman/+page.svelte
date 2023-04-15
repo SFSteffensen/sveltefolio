@@ -118,5 +118,4 @@
 
 <script lang="ts">
     import {theme} from "../../stores/stores";
-    import {scrollToAnchor} from "../../utils.ts";
 </script>

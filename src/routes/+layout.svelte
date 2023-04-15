@@ -1,4 +1,5 @@
 <nav class="navbar">
+    <!-- Navigation Links -->
     <div>
         <button href="#home" class="navbar-link heroButton" data-theme="dark" on:click={scrollToAnchor}>Home</button>
     </div>
@@ -14,6 +15,7 @@
         <button href="#contact" class="navbar-link heroButton" data-theme="dark" on:click={scrollToAnchor}>Contact
         </button>
     </div>
+    <!-- Theme Toggle Button -->
     <div>
         <button class="heroButton" data-theme={$theme} on:click={toggle_theme}>
             {#if $theme === 'dark'}
@@ -44,7 +46,9 @@
     </div>
 </nav>
 
+
 <style>
+    /* Root Variables */
     :root {
         --backround-colour-dark-primary: #303446;
         --backround-colour-dark-secondary: #292c3c;
@@ -65,6 +69,7 @@
         --i: 0;
     }
 
+    /* Body Styles */
     :global(body) {
         width: 100%;
         background: var(--backround-colour-dark-primary);
@@ -84,7 +89,7 @@
         background: var(--backround-colour-light-primary);
         background-size: 350% 350%;
         position: relative;
-        animation: change 2 0s ease-in-out infinite;
+        animation: change 2s 0s ease-in-out infinite;
         font-size: 20px;
         color: var(--text-colour-light-secondary);
         font-family: var(--main-font);
@@ -196,38 +201,34 @@
 </style>
 
 <script>
-    import {writable} from "svelte/store";
-    import {onMount, onDestroy} from "svelte";
-    import {theme} from "../stores/stores.ts";
+    import {onMount} from 'svelte';
+    import {theme} from '../stores/stores.ts';
 
-    let darkMode = false;
-    // get the users preference from browser
+    // On mount, set the theme based on the value in the theme store
     onMount(() => {
-        darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        window.document.body.classList.toggle('light', !darkMode);
-        let theme = window.document.querySelectorAll('[data-theme]')
-        theme.forEach(element => {
-            element.dataset.theme = darkMode ? 'dark' : 'light';
+        document.body.classList.toggle('light', $theme === 'light');
+        let themeElements = document.querySelectorAll('[data-theme]');
+        themeElements.forEach((element) => {
+            element.dataset.theme = $theme;
         });
     });
 
+    // Function to smoothly scroll to an anchor on the page
     function scrollToAnchor(event) {
         event.preventDefault();
-        const href = event.target.getAttribute("href");
+        const href = event.target.getAttribute('href');
         const offsetTop = document.querySelector(href).offsetTop - 60;
         window.scrollTo({
             top: offsetTop,
-            behavior: "smooth"
+            behavior: 'smooth',
         });
     }
 
-
+    // Function to toggle between light and dark themes
     const toggle_theme = () => {
         theme.update((currentTheme) => (currentTheme === 'light' ? 'dark' : 'light'));
         document.body.className = $theme;
     };
-
-
 </script>
 
 
