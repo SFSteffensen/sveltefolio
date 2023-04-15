@@ -85,6 +85,7 @@
         font-weight: 800;
         text-align: center;
         text-transform: uppercase;
+        word-wrap: break-word;
     }
 
     .title[data-theme="dark"] {
@@ -190,7 +191,7 @@
         color: rgb(158, 123, 218);
     }
 
-    @media (max-width: 700px) or (max-height: 700px) {
+    @media (max-width: 600px) or (max-height: 600px) {
         .title {
             font-size: 1.5rem;
         }
