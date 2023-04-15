@@ -199,11 +199,13 @@
             width: 10rem;
             height: 10rem;
         }
+        .typing-style {
+            width: 18ch;
+        }
     }
 
     .top-div {
         display: flex;
         flex-direction: column;
     }
-
 </style>
