@@ -6,6 +6,9 @@
     import socialfooter from "../components/socialfooter.svelte";
 
 </script>
+<title>
+    S3bTheGuy's Portfolio
+</title>
 <div class="top-div">
     <div class="pageheight">
         <div class="center">

@@ -1,3 +1,6 @@
+<title>
+    ZBC LaTeX Template
+</title>
 <div class="pageheight">
     <div class="center">
         <h1 class="title typing-style" data-theme={$theme}>
