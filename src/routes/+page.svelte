@@ -19,7 +19,7 @@
 			alt="S3bTheGuy's profile picture"
 			class='profileimage'
 			data-theme={$theme}
-			src='https://avatars.githubusercontent.com/u/51111827?s=400&u=c2505b9768e98681bd1f82800c1d18f890c9232d&v=4'
+			src='/public/images/profilepic.png'
 		/>
 		<p class='carved' data-theme={$theme}>
 			Hi there, I'm Sebastian Steffensen - a Danish student developer with a passion for creating sleek,
