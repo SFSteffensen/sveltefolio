@@ -9,7 +9,7 @@
 	</div>
 	<img
 		alt=''
-		src='https://media.discordapp.net/attachments/905002334428483674/1095993490602725396/zbcCard.png?width=759&height=1074'
+		src='../../../public/images/zbcCard.png'
 		style='width: 20%; margin: 0 auto; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding-bottom: 4rem;'
 	/>
 	<p class='carved' data-theme={$theme}>
@@ -105,7 +105,7 @@
 
     .typing-style {
         width: 19ch;
-        animation: typing 2s steps(24), blink .5s step-end infinite alternate;
+        animation: typing 2s steps(19), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
         border-right: 3px solid;

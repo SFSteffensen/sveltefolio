@@ -10,18 +10,20 @@
 	{#if $theme === 'dark'}
 		<img
 			alt=''
-			src='.images/SveltDark.png'
-			style='width: 20%; margin: 0 auto; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding-bottom: 4rem;'
+			src='../../../public/images/SvelteDark.png'
+			class='pic'
 		/>
 	{:else}
 		<img
 			alt=''
 			src='../../../public/images/Sveltelight.png'
-			style='width: 20%; margin: 0 auto; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding-bottom: 4rem;'
+			class='pic'
 		/>
 	{/if}
 	<p class='carved' data-theme={$theme}>
-
+		This is a portfolio built with Svelte, It's also coincidentally the site you're on right now!
+		It's my first experience using Svelte and it's been a great learning experience, I've throughout this project really taken a liking to the routing system and the way it's implemented,
+		and I'm looking forward to using it in future web related projects.
 	</p>
 </div>
 <div style='display: flex;
@@ -33,6 +35,16 @@
 		href='/../'>
 		Take Me Back
 	</a>
+
+	<a
+		class='source center'
+		data-theme={$theme}
+		href='Will be added soon'
+		rel='noopener noreferrer'
+		target='_blank'>
+		Github Repo
+	</a>
+
 </div>
 
 <style>
@@ -99,8 +111,8 @@
     }
 
     .typing-style {
-        width: 40ch;
-        animation: typing 2s steps(24), blink .5s step-end infinite alternate;
+        width: 12ch;
+        animation: typing 1s steps(12), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
         border-right: 3px solid;
@@ -119,14 +131,22 @@
             border-color: transparent
         }
     }
-
-    .rs {
-        color: #e69f67;
-    }
-
-    .ts {
-        color: #3178c6;
-    }
+		.pic {
+        height: 15rem;
+        border-radius: 3%;
+        margin: 0 auto 3rem;
+        display: block;
+        margin: 0 auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding-bottom: 4rem;
+		}
+    @media (max-width: 400px) or (max-height: 400px) {
+				.pic {
+						height: 7rem;
+				}
+		}
 </style>
 
 <script lang='ts'>

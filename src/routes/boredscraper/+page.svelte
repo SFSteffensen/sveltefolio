@@ -9,8 +9,8 @@
 	</div>
 	<img
 		alt=''
-		src='https://s2.qwant.com/thumbr/0x380/e/f/e247e3bc92529faca50cdf673ac5a34b6093ba598d3b35b3c1a3cdcd687333/reddit2-800x450-1.png?u=https%3A%2F%2Fwww.enter.co%2Fwp-content%2Fuploads%2F2021%2F02%2Freddit2-800x450-1.png&q=0&b=1&p=0&a=0'
-		style='width: 20%; margin: 0 auto; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding-bottom: 4rem;'
+		src='../../../public/images/bored_scraper.png'
+		class='pic'
 	/>
 	<p class='carved' data-theme={$theme}>
 		Bored Scraper is a reddit scraper i made in rust from scratch because i was bored!
@@ -94,7 +94,7 @@
 
     .typing-style {
         width: 14ch;
-        animation: typing 1s steps(22), blink .5s step-end infinite alternate;
+        animation: typing 1s steps(14), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
         border-right: 3px solid;
@@ -114,15 +114,25 @@
         }
     }
 
-    .rs {
-        color: #e69f67;
+    .pic {
+        height: 15rem;
+        border-radius: 3%;
+        margin: 0 auto 3rem;
+        display: block;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
     }
 
-    .ts {
-        color: #3178c6;
+    @media (max-width: 400px) or (max-height: 400px) {
+        .pic {
+            height: 7rem;
+        }
     }
 </style>
 
 <script lang='ts'>
-    import { theme } from '../../stores/stores';
+	import { theme } from '../../stores/stores';
 </script>

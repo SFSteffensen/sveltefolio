@@ -3,14 +3,22 @@
 </title>
 <div class='pageheight'>
 	<div class='center'>
+		<div style='display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;'>
 		<h1 class='title typing-style' data-theme={$theme}>
-			Passman <br /> A password manager written using Tauri
+			Passman
 		</h1>
+		<h2 class='typing-style2 title'>
+			A password manager written using Tauri
+		</h2>
+		</div>
 	</div>
 	<img
 		alt=''
-		src='https://media.discordapp.net/attachments/905002334428483674/1044965665288757339/Login.png?width=1909&height=1074'
-		style='width: 20%; margin: 0 auto; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding-bottom: 4rem;'
+		src='../../../public/images/passman.png'
+		class='pic'
 	/>
 	<p class='carved' data-theme={$theme}>
 		Passman is a password manager written in <span class='rs'>Rust</span> & <span class='ts'>TypeScript</span> using
@@ -94,8 +102,17 @@
     }
 
     .typing-style {
-        width: 40ch;
-        animation: typing 2s steps(24), blink .5s step-end infinite alternate;
+        width: 8ch;
+        animation: typing 1s steps(8), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2em;
+    }
+    .typing-style2 {
+        width: 39ch;
+        animation: typing 4s steps(39), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
         border-right: 3px solid;
@@ -121,6 +138,22 @@
 
     .ts {
         color: #3178c6;
+    }
+    .pic {
+        height: 15rem;
+        border-radius: 3%;
+        margin: 0 auto 3rem;
+        display: block;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+    }
+    @media (max-width: 400px) or (max-height: 400px) {
+        .pic {
+            height: 7rem;
+        }
     }
 </style>
 

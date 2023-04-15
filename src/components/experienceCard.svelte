@@ -1,3 +1,7 @@
+<script>
+import { theme } from '../stores/stores.ts';
+</script>
+
 <div class='experienceCard'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' />
 	<section class='hero-section'>
@@ -13,7 +17,7 @@
 
 			<a class='card' href='/zbcTemplate'>
 				<div class='card__background'
-						 style='background-image: url(https://cdn.discordapp.com/attachments/905002334428483674/1095993490602725396/zbcCard.png)'></div>
+						 style='background-image: url(/public/images/zbcCard.png)'></div>
 				<div class='card__content'>
 					<p class='card__category'>Work templates</p>
 					<h3 class='card__heading'>Bjarnechapter ZBC</h3>
@@ -30,8 +34,13 @@
 			</a>
 
 			<a class='card' href='/sveltefolio'>
+				{#if $theme === 'dark'}
+				<div class='card__background'
+						 style='background-image: url(/public/images/Sveltedark.png)'></div>
+				{:else}
 				<div class='card__background'
 						 style='background-image: url(/public/images/Sveltelight.png)'></div>
+				{/if}
 				<div class='card__content'>
 					<p class='card__category'>Website</p>
 					<h3 class='card__heading'>SveltFolio</h3>
