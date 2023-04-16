@@ -9,7 +9,7 @@
 	</div>
 	<img
 		alt=''
-		src='../../../static/.images/bored_scraper.png'
+		src={'/.images/bored_scraper.png'}
 		class='pic'
 	/>
 	<p class='carved' data-theme={$theme}>

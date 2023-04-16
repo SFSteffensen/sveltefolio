@@ -17,7 +17,7 @@
 	</div>
 	<img
 		alt=''
-		src='../../../static/.images/passman.png'
+		src={'/.images/passman.png'}
 		class='pic'
 	/>
 	<p class='carved' data-theme={$theme}>
