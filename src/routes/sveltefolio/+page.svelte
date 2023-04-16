@@ -40,7 +40,7 @@
 	<a
 		class='source center'
 		data-theme={$theme}
-		href='Will be added soon'
+		href='https://github.com/S3bTheGuy/sveltefolio'
 		rel='noopener noreferrer'
 		target='_blank'>
 		Github Repo
