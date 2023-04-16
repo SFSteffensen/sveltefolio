@@ -9,8 +9,8 @@
 	</div>
 	<img
 		alt=''
-		src={'/.images/bored_scraper.png'}
 		class='pic'
+		src={'/.images/bored_scraper.png'}
 	/>
 	<p class='carved' data-theme={$theme}>
 		Bored Scraper is a reddit scraper i made in rust from scratch because i was bored!

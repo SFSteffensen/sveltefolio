@@ -22,7 +22,8 @@
 	{/if}
 	<p class='carved' data-theme={$theme}>
 		This is a portfolio built with Svelte, It's also coincidentally the site you're on right now!
-		It's my first experience using Svelte and it's been a great learning experience, I've throughout this project really taken a liking to the routing system and the way it's implemented,
+		It's my first experience using Svelte and it's been a great learning experience, I've throughout this project really
+		taken a liking to the routing system and the way it's implemented,
 		and I'm looking forward to using it in future web related projects.
 	</p>
 </div>
@@ -131,22 +132,24 @@
             border-color: transparent
         }
     }
-		.pic {
+
+    .pic {
         height: 15rem;
         border-radius: 3%;
         margin: 0 auto 3rem;
         display: block;
         margin: 0 auto;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				padding-bottom: 4rem;
-		}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+    }
+
     @media (max-width: 400px) or (max-height: 400px) {
-				.pic {
-						height: 7rem;
-				}
-		}
+        .pic {
+            height: 7rem;
+        }
+    }
 </style>
 
 <script lang='ts'>

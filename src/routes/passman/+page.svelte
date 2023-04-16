@@ -7,18 +7,18 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;'>
-		<h1 class='title typing-style' data-theme={$theme}>
-			Passman
-		</h1>
-		<h2 class='typing-style2 title'>
-			A password manager written using Tauri
-		</h2>
+			<h1 class='title typing-style' data-theme={$theme}>
+				Passman
+			</h1>
+			<h2 class='typing-style2 title'>
+				A password manager written using Tauri
+			</h2>
 		</div>
 	</div>
 	<img
 		alt=''
-		src={'/.images/passman.png'}
 		class='pic'
+		src={'/.images/passman.png'}
 	/>
 	<p class='carved' data-theme={$theme}>
 		Passman is a password manager written in <span class='rs'>Rust</span> & <span class='ts'>TypeScript</span> using
@@ -110,6 +110,7 @@
         font-family: monospace;
         font-size: 2em;
     }
+
     .typing-style2 {
         width: 39ch;
         animation: typing 4s steps(39), blink .5s step-end infinite alternate;
@@ -139,6 +140,7 @@
     .ts {
         color: #3178c6;
     }
+
     .pic {
         height: 15rem;
         border-radius: 3%;
@@ -150,6 +152,7 @@
         align-items: center;
         padding-bottom: 4rem;
     }
+
     @media (max-width: 400px) or (max-height: 400px) {
         .pic {
             height: 7rem;
@@ -158,5 +161,5 @@
 </style>
 
 <script lang='ts'>
-    import { theme } from '../../stores/stores';
+	import { theme } from '../../stores/stores';
 </script>

@@ -202,10 +202,10 @@
 </style>
 
 <script>
-    import { onMount } from 'svelte';
-    import { theme } from '../stores/stores.ts';
+	import { onMount } from 'svelte';
+	import { theme } from '../stores/stores.ts';
 
-    // On mount, set the theme based on the value in the theme store
+	// On mount, set the theme based on the value in the theme store
 	onMount(() => {
 		document.body.classList.toggle('light', $theme === 'light');
 		let themeElements = document.querySelectorAll('[data-theme]');

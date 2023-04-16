@@ -23,7 +23,7 @@
 		/>
 		<p class='carved' data-theme={$theme}>
 			Hi there, I'm Sebastian Steffensen - a Danish student developer with a passion for creating sleek,
-			user-friendly applications and websites.
+			user-friendly command-line interfaces and programs.
 			<br /><br />
 			When I'm not studying at <a class='link' data-theme={$theme} href='https://www.zbc.dk'>Zealand Business
 			College</a> or working on a new project, you can usually find me playing video games, or trying out new
@@ -57,12 +57,11 @@
 			I have experience in several programming languages, including <span class='rs'>Rust</span>, <span
 			class='ts'>TypeScript</span>, <span class='swift'>Swift</span>, and <span class='cs'>C#</span>. However,
 			Rust is definitely my favorite due to its emphasis on performance, safety, and concurrency. I'm a big fan of
-			code that runs fast and without errors. I also prefer using UNIX-like operating systems for everything
+			code that runs fast and smoothly. I also prefer using UNIX-like operating systems for everything
 			except gaming. There's just something so satisfying about the flexibility and customization they offer.
 			<br /><br />
 			Outside of programming and gaming, I enjoy cooking and spending time with my friends and family. I'm always
-			up for trying new things and exploring new places, whether that means hiking in the beautiful Danish
-			countryside or trying out a new restaurant in the city.
+			up for trying new things and exploring new places.
 			<br /><br />
 			Thanks for taking the time to get to know me a little better. If you want to chat about programming, gaming,
 			or anything else, <a class='link' data-theme={$theme} href='#contact' on:click={scrollToAnchor}

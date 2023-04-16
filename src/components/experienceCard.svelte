@@ -1,5 +1,5 @@
 <script>
-import { theme } from '../stores/stores.ts';
+	import { theme } from '../stores/stores.ts';
 </script>
 
 <div class='experienceCard'>
@@ -35,11 +35,11 @@ import { theme } from '../stores/stores.ts';
 
 			<a class='card' href='/sveltefolio'>
 				{#if $theme === 'dark'}
-				<div class='card__background'
-						 style='background-image: url(/.images/Sveltedark.png)'></div>
+					<div class='card__background'
+							 style='background-image: url(/.images/Sveltedark.png)'></div>
 				{:else}
-				<div class='card__background'
-						 style='background-image: url(/.images/Sveltelight.png)'></div>
+					<div class='card__background'
+							 style='background-image: url(/.images/Sveltelight.png)'></div>
 				{/if}
 				<div class='card__content'>
 					<p class='card__category'>Website</p>
