@@ -8,7 +8,7 @@ import { theme } from '../stores/stores.ts';
 		<div class='card-grid'>
 			<a class='card' href='/passman'>
 				<div class='card__background'
-						 style='background-image: url(/public/images/passman.png)'></div>
+						 style='background-image: url(/.images/passman.png)'></div>
 				<div class='card__content'>
 					<p class='card__category'>Security</p>
 					<h3 class='card__heading'>Passman</h3>
@@ -17,7 +17,7 @@ import { theme } from '../stores/stores.ts';
 
 			<a class='card' href='/zbcTemplate'>
 				<div class='card__background'
-						 style='background-image: url(/public/images/zbcCard.png)'></div>
+						 style='background-image: url(/.images/zbcCard.png)'></div>
 				<div class='card__content'>
 					<p class='card__category'>Work templates</p>
 					<h3 class='card__heading'>Bjarnechapter ZBC</h3>
@@ -26,7 +26,7 @@ import { theme } from '../stores/stores.ts';
 
 			<a class='card' href='/boredscraper'>
 				<div class='card__background'
-						 style='background-image: url(/public/images/bored_scraper.png)'></div>
+						 style='background-image: url(/.images/bored_scraper.png)'></div>
 				<div class='card__content'>
 					<p class='card__category'>Command Line Tools</p>
 					<h3 class='card__heading'>Bored Scraper</h3>
@@ -36,10 +36,10 @@ import { theme } from '../stores/stores.ts';
 			<a class='card' href='/sveltefolio'>
 				{#if $theme === 'dark'}
 				<div class='card__background'
-						 style='background-image: url(/public/images/Sveltedark.png)'></div>
+						 style='background-image: url(/.images/Sveltedark.png)'></div>
 				{:else}
 				<div class='card__background'
-						 style='background-image: url(/public/images/Sveltelight.png)'></div>
+						 style='background-image: url(/.images/Sveltelight.png)'></div>
 				{/if}
 				<div class='card__content'>
 					<p class='card__category'>Website</p>

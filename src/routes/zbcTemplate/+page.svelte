@@ -9,7 +9,7 @@
 	</div>
 	<img
 		alt=''
-		src='../../../public/images/zbcCard.png'
+		src='../../../.images/zbcCard.png'
 		style='width: 20%; margin: 0 auto; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding-bottom: 4rem;'
 	/>
 	<p class='carved' data-theme={$theme}>
