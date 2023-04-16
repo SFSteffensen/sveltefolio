@@ -207,6 +207,8 @@
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
 
+	inject({ mode: dev ? 'development' : 'production' });
+
 	// On mount, set the theme based on the value in the theme store
 	onMount(() => {
 		document.body.classList.toggle('light', $theme === 'light');
@@ -232,8 +234,6 @@
 		theme.update((currentTheme) => (currentTheme === 'light' ? 'dark' : 'light'));
 		document.body.className = $theme;
 	};
-
-	inject({ mode: dev ? 'development' : 'production' });
 
 </script>
 
