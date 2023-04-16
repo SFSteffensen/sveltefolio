@@ -10,13 +10,13 @@
 	{#if $theme === 'dark'}
 		<img
 			alt=''
-			src='../../../.images/Sveltedark.png'
+			src='../../../public/static/.images/Sveltedark.png'
 			class='pic'
 		/>
 	{:else}
 		<img
 			alt=''
-			src='../../../.images/Sveltelight.png'
+			src='../../../public/static/.images/Sveltelight.png'
 			class='pic'
 		/>
 	{/if}

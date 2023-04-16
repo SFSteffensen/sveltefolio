@@ -8,7 +8,7 @@ import { theme } from '../stores/stores.ts';
 		<div class='card-grid'>
 			<a class='card' href='/passman'>
 				<div class='card__background'
-						 style='background-image: url(/.images/passman.png)'></div>
+						 style='background-image: url("public/static/.images/passman.png")'></div>
 				<div class='card__content'>
 					<p class='card__category'>Security</p>
 					<h3 class='card__heading'>Passman</h3>
