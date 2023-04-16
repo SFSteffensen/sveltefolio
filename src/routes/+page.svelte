@@ -19,7 +19,7 @@
 			alt="S3bTheGuy's profile picture"
 			class='profileimage'
 			data-theme={$theme}
-			src={'static/.images/profilepic.png'}
+			src={'/.images/profilepic.png'}
 		/>
 		<p class='carved' data-theme={$theme}>
 			Hi there, I'm Sebastian Steffensen - a Danish student developer with a passion for creating sleek,
