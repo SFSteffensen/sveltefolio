@@ -204,6 +204,8 @@
 <script>
 	import { onMount } from 'svelte';
 	import { theme } from '../stores/stores.ts';
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
 
 	// On mount, set the theme based on the value in the theme store
 	onMount(() => {
@@ -230,6 +232,9 @@
 		theme.update((currentTheme) => (currentTheme === 'light' ? 'dark' : 'light'));
 		document.body.className = $theme;
 	};
+
+	inject({ mode: dev ? 'development' : 'production' });
+
 </script>
 
 
