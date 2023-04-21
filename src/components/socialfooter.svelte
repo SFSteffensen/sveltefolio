@@ -5,7 +5,7 @@
 	<div class='center socials'>
 		<a href='https://linkedin.com/in/sebastian-steffensen-2319871b4' target='_blank'>
 			{#if $theme === 'dark'}
-				<svg fill='#ffffff' width='50px' height='40px' viewBox='-5.5 0 32 32' version='1.1'
+				<svg fill='#ffffff' width='40px' height='40px' viewBox='-5.5 0 32 32' version='1.1'
 						 xmlns='http://www.w3.org/2000/svg'>
 					<g id='SVGRepo_bgCarrier' stroke-width='0'></g>
 					<g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g>
